@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { buildLessonPrompt, fallbackLesson, UserProfile } from "@/lib/prompts";
+import { buildLessonPrompt, fallbackLesson, UserProfile } from "../../../lib/prompts";
 
 function extractText(data: any): string {
   if (typeof data?.output_text === "string") return data.output_text;
